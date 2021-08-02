@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "iostream": "c",
+        "cstdio": "c",
+        "limits": "c",
+        "utility": "c",
+        "stdlib.h": "c"
+    }
+}
