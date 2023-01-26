@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ying</title>
+    <style>
+        body {
+            font-family: consola;
+            user-select: none;
+            max-width: 768px;
+            margin: 50px auto;
+            padding: 16px;
+            cursor: url("https://www.ranying.xyz/cursor.png"), auto;
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: row;
+        }
+        body>img {
+            width: 30vmin;
+            height: auto;
+            border-radius: 50%;
+            align-self: center;
+        }
+        ul>li {
+            margin: 4px;
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover::after {
+            content: '  ' attr(href);
+            font-size: 1rem;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        @font-face {
+            font-family: consola;
+            src: url("/font/consola.ttf");
+        }
+        @media all {
+            body {
+                background-color: #dadaf0;
+            }
+            * {
+                color: rgb(30, 30, 30);
+            }
+        }
+        @media (prefers-color-scheme: dark){
+            body {
+                background-color: rgb(30, 30, 30);
+            }
+            * {
+                color: #a7a6dc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="headpic.webp" />
+    <div>
+        <h1>Ying's</h1>
+        <ul>
+            <li><a href="https://note.yir.moe" target="_blank">Notebook</a></li>
+            <li><a href="https://music.yir.moe" target="_blank">Music</a></li>
+            <li><a href="https://status.ranying.xyz" target="_blank">Status</a></li>
+            <li><a href="https://www.github.com/Ran-ying" target="_blank">GitHub</a></li>
+            <li><a href="https://api.ranying.xyz" target="_blank">API</a></li>
+        </ul>
+    </div>
+</body>
+</html>
