@@ -7,61 +7,26 @@
     <title>Ying</title>
     <style>
         body {
-            font-family: consola;
-            user-select: none;
-            max-width: 768px;
-            margin: 50px auto;
-            padding: 16px;
-            cursor: url("/cursor.png"), auto;
-            font-size: 1.5em;
-            display: flex;
-            flex-direction: row;
+            background-color: #dadaf0;
+            text-align: center;
         }
-        body>img {
-            width: 30vmin;
-            height: auto;
+        f {
+            margin-top: 128px;
+            background-image: url(headpic.webp);
+            background-size: cover;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            align-self: center;
-        }
-        ul>li {
-            margin: 4px;
-            list-style-type: none;
-        }
-        a {
-            text-decoration: none;
-        }
-        a:hover::after {
-            content: '  ' attr(href);
-            font-size: 1rem;
-        }
-        body::-webkit-scrollbar {
-            display: none;
-        }
-        @font-face {
-            font-family: consola;
-            src: url("/font/consola.ttf");
-        }
-        @media all {
-            body {
-                background-color: #dadaf0;
-                color: rgb(30, 30, 30);
-            }
+            display: inline-block;
         }
         @media (prefers-color-scheme: dark){
             body {
                 background-color: rgb(30, 30, 30);
-                color: #a7a6dc;
             }
         }
     </style>
 </head>
 <body>
-    <img src="headpic.webp" />
-    <div>
-        <h1>Ying's</h1>
-        <ul>
-            <li><a href="https://www.github.com/Ran-ying" target="_blank">GitHub</a></li>
-        </ul>
-    </div>
+    <f />
 </body>
 </html>
