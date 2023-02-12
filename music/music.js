@@ -118,4 +118,7 @@ let toggle = ()=>{
         document.title = title;
     }
 }
-player.addEventListener('ended', loadMusic)
+player.addEventListener('ended', ()=>{
+    loadMusic();
+    player.play();
+})
