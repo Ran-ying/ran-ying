@@ -102,17 +102,20 @@ let musicList = [
 ]
 
 let player = new Audio();
+let music;
+let title = document.title;
 let loadMusic = ()=>{
-    let music = musicList[Math.floor(Math.random()*musicList.length)];
+    music = musicList[Math.floor(Math.random()*musicList.length)];
     player.src = music.url;
-    document.title = music.name;
 }
 let toggle = ()=>{
     if(player.paused){
         player.play();
+        document.title = music.name;
     }
     else {
         player.pause();
+        document.title = title;
     }
 }
 player.addEventListener('ended', loadMusic)
