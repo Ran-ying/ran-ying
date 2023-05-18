@@ -7,9 +7,13 @@
     <title>Ying</title>
     <script src="music/music.js"></script>
     <style>
-        body {
+        body, html {
+            padding: 0px;
+            margin: 0px;
+            height: 100%;
             background-color: #dadaf0;
             text-align: center;
+            overflow: hidden;
         }
         f {
             margin-top: 128px;
@@ -28,6 +32,12 @@
     </style>
 </head>
 <body onload="loadMusic()">
+    <div style="height: 100%;   left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);">
+        <img src="./bg.jpg" style="height: 100%;"/>
+    </div>
     <f onclick="toggle()"/>
 </body>
 </html>
