@@ -11,9 +11,10 @@
             padding: 0px;
             margin: 0px;
             height: 100%;
-            background-color: #dadaf0;
+            background-color: #a7a6dc;
             text-align: center;
             overflow: hidden;
+            color: whitesmoke;
         }
         f {
             margin-top: 128px;
@@ -32,12 +33,20 @@
     </style>
 </head>
 <body onload="loadMusic()">
-    <div style="height: 100%;   left: 50%;
+<!--     <div style="height: 100%;   left: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);">
         <img src="./bg.jpg" style="height: 100%;"/>
     </div>
-    <f onclick="toggle()"/>
+    <f onclick="toggle()"/> -->
+    <h1>Ying</h1>
+    <div style="font-size: 10em;">
+        <!-- 回国倒计时<br> -->
+        <span id="t"></span>
+        <script>
+            window["t"].innerHTML = (new Date("2023/7/6") - new Date())/86400000 | 0;
+        </script>
+    </div>
 </body>
 </html>
