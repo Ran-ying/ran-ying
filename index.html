@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +8,51 @@
     <title>Ying</title>
     <script src="music/music.js"></script>
     <style>
-        body, html {
+        body,
+        html {
             padding: 0px;
             margin: 0px;
             height: 100%;
-            background-color: #a7a6dc;
             text-align: center;
             overflow: hidden;
-            color: whitesmoke;
         }
-        f {
-            margin-top: 128px;
-            background-image: url(headpic.webp);
-            background-size: cover;
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            display: inline-block;
+
+        @media all {
+            body {
+                background-color: #dadaf0;
+                color: rgb(30, 30, 30);
+            }
         }
-        @media (prefers-color-scheme: dark){
+
+        @media (prefers-color-scheme: dark) {
             body {
                 background-color: rgb(30, 30, 30);
+                color: #a7a6dc;
             }
+        }
+
+        @media screen and (width >= 600px) {
+            
+            #headpic {
+                margin-top: 128px;
+                background-image: url(headpic.webp);
+                background-size: cover;
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        }
+
+        @media screen and (width < 600px) {
+            
         }
     </style>
 </head>
+
 <body onload="loadMusic()">
-<!--     <div style="height: 100%;   left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);">
-        <img src="./bg.jpg" style="height: 100%;"/>
-    </div>
-    <f onclick="toggle()"/> -->
+    <img id="headpic" onclick="toggle()" />
     <h1>Ying</h1>
-    <div style="font-size: 10em;">
-        <!-- 回国倒计时<br> -->
-        <!--<span id="t"></span>
-        <script>
-            window["t"].innerHTML = (new Date("2023/7/6") - new Date())/86400000 | 0;
-        </script>-->
-    </div>
 </body>
+
 </html>
