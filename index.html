@@ -13,14 +13,22 @@
             padding: 0px;
             margin: 0px;
             height: 100%;
-            text-align: center;
+            /* text-align: center; */
             overflow: hidden;
         }
-
+        ul {
+            list-style: none;
+            padding-left: 0px;
+        }
         @media all {
             body {
                 background-color: #dadaf0;
                 color: rgb(30, 30, 30);
+                fill: rgb(30, 30, 30);
+            }
+            a {
+                color: rgb(30, 30, 30);
+                text-decoration: none;
             }
         }
 
@@ -28,31 +36,99 @@
             body {
                 background-color: rgb(30, 30, 30);
                 color: #a7a6dc;
+                fill: #a7a6dc;
+            }
+            a {
+                color: #a7a6dc;
+                text-decoration: none;
             }
         }
 
         @media screen and (width >= 600px) {
-            
+            body>div {
+                margin: auto auto;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+                display: flex;
+                font-size: 1.5em;
+            }
             #headpic {
-                margin-top: 128px;
                 background-image: url(headpic.webp);
                 background-size: cover;
-                width: 180px;
-                height: 180px;
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
                 border-radius: 50%;
                 display: inline-block;
+                border: 2px solid;
+            }
+            
+            body>div>div+div {
+                margin-left: 175px;
+                width: 225px;
+                box-sizing: border-box;
+                border: 2px solid;
+                border-radius: 24px;
+                padding: 8px;
             }
         }
 
         @media screen and (width < 600px) {
+            body>div {
+                margin: auto auto;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.5em;
+            }
+            #headpic {
+                background-image: url(headpic.webp);
+                background-size: cover;
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 0);
+                border-radius: 50%;
+                display: inline-block;
+                border: 2px solid;
+            }
             
+            body>div>div+div {
+                margin-top: 175px;
+                width: 225px;
+                box-sizing: border-box;
+                border: 2px solid;
+                border-radius: 24px;
+                padding: 8px;
+            }
         }
     </style>
 </head>
 
 <body onload="loadMusic()">
-    <img id="headpic" onclick="toggle()" />
-    <h1>Ying</h1>
+    <div>
+        <div>
+            <img id="headpic" onclick="toggle()" />
+        </div>
+        <div>
+            <h1>Ying</h1>
+            <ul>
+                <li><a href="https://photos.yir.moe" target="_blank">Photo Library</a></li>
+                <li><a href="https://music.yir.moe" target="_blank">Ying's Music</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
